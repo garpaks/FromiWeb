@@ -1,0 +1,319 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #fff;
+}
+.header {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 15px 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  width: 90%;
+  z-index: 1000;
+}
+
+.logo {
+  background-image: url("./resources/Logo Metrología Fromi 2025 ACTUALIZADO.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 150px;
+  height: 50px;
+  display: block;
+}
+
+.nav-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 30px;
+  margin-right: 20px;
+  text-align: center;
+  align-items: center;
+}
+
+.nav-menu li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 400;
+  transition: color 0.3s ease;
+}
+
+.nav-menu li a:hover {
+  color: #ff8c00;
+  border-top: #fff 1px solid;
+  transition: all 0.1s ease;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.social-icons img {
+  width: 30px;
+  height: 30px;
+  border-radius: 78%;
+  object-fit: cover;
+}
+
+.social-icons a {
+  color: #fff;
+  font-size: 20px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #ff8c00;
+}
+
+.hero {
+  background-image: url("./resources/INICIO/Banner\ inicio.jpeg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  color: #fff;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 17, 36, 0.717);
+  z-index: 2;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  padding: 20px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3.5em;
+  margin-bottom: 10px;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+.hero h1 span {
+  color: #ff8c00;
+}
+
+.hero p {
+  font-size: 1.5em;
+  margin-bottom: 30px;
+}
+
+.btn-quote {
+  background-color: #ff8c00;
+  color: #fff;
+  padding: 15px 40px;
+  text-decoration: none;
+  border-radius: 10px;
+  font-size: 1.2em;
+  transition: background-color 0.3s ease;
+  font-weight: 700;
+}
+
+.btn-quote:hover {
+  background-color: #e07b00;
+}
+
+/* Ambos contenedores hijos de el siguiente tenian que estar posicionados con z-index y el 
+padre con position absolute, hero position relative*/
+.accreditations-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  width: 80%;
+  height: auto;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: auto;
+  z-index: 2;
+  box-shadow: 0 4px 8px 4px rgba(0, 0, 0, 0.2);
+}
+
+.accreditations-box {
+  background-color: rgb(224, 223, 223);
+  color: black;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3em;
+  width: auto;
+  height: auto;
+}
+
+.accreditations-box h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: start;
+}
+
+.catalog-box {
+  background-color: #fff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  width: 100%;
+}
+
+.catalog-box p {
+  color: #333;
+  font-size: 1.5em;
+  line-height: 1.5;
+  font-weight: bold;
+}
+
+.btn-catalog {
+  background-color: #ff8c00;
+  border: 3px solid #ff8c00;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  border-radius: 10px;
+  font-weight: 700;
+  transition: all 0.3s ease;
+  width: auto;
+  height: 10%;
+}
+
+.btn-catalog:hover {
+  color: #ff8c00;
+  background-color: transparent;
+}
+
+.history-section {
+  padding: 150px 20px;
+  background-color: rgb(244, 244, 244);
+  text-align: center;
+}
+
+.history-container {
+  background-color: rgb(244, 244, 244);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.history-text-container {
+  background-color: white;
+  box-shadow: 0 4px 8px 4px rgba(0, 0, 0, 0.3);
+  padding: 1em;
+  width: auto;
+}
+
+.history-section h2 {
+  font-size: 2.5em;
+  font-weight: 700;
+  color: rgb(0, 126, 195);
+}
+
+.history-intro {
+  font-size: 1.2em;
+  color: #555;
+  max-width: 800px;
+  margin: 0 auto 10px;
+  font-weight: bold;
+}
+
+.history-sub-intro {
+  font-style: normal;
+  color: black;
+}
+
+/* Estilos de la línea de tiempo */
+
+#fromiLogo {
+  width: 70%;
+  height: auto;
+  object-fit: cover;
+}
+
+#emmaLogo {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Contenedor principal de la línea de tiempo */
+
+.timeline-container {
+  color: black;
+  display: flex;
+  flex-direction: column;
+  padding: 8em;
+  display: grid;
+  grid-template-columns: 1fr;
+  z-index: 1;
+}
+
+.timeline-item.content,
+.timeline-item.empty {
+  display: flex;
+  text-align: start;
+  align-items: start;
+  justify-content: start;
+  flex-direction: column;
+}
+
+.timeline-item.content h3 {
+  color: #ff8c00;
+  font-size: 2em;
+}
+
+.timeline-item.content p {
+  font-size: 1.2em;
+  color: #333;
+  line-height: 1.4;
+}
+
+.timeline-item.content img {
+  max-width: 100%;
+  height: auto;
+  align-self: center;
+}
+
+#timeline-container-top,
+#timeline-container-bottom {
+  display: flex;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-auto-flow: column;
+  gap: 1em;
+  margin: 0 auto;
+  width: 90%;
+}
+
+#timeline-container-top {
+  border-bottom: #007bff 2.5px solid;
+}
+
+#timeline-container-bottom {
+  border-top: #007bff 2.5px solid;
+}
