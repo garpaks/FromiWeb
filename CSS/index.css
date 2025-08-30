@@ -1,3 +1,12 @@
+:root {
+  --primary-color: #2e62a8;
+  --secondary-color: #f1f1f1;
+  --text-dark: #333;
+  --text-light: #fff;
+  --card-bg: #e0e0e0;
+  --card-border: #cccccc;
+  --orange-btn: #f58428;
+}
 body {
   font-family: "Montserrat", sans-serif;
   margin: 0;
@@ -17,7 +26,7 @@ body {
 }
 
 .logo {
-  background-image: url("./resources/Logo Metrología Fromi 2025 ACTUALIZADO.png");
+  background-image: url("/resources/Logo\ Metrología\ Fromi\ 2025\ ACTUALIZADO.png");
   background-size: contain;
   background-repeat: no-repeat;
   width: 150px;
@@ -73,7 +82,7 @@ body {
 }
 
 .hero {
-  background-image: url("./resources/INICIO/Banner\ inicio.jpeg");
+  background-image: url("/resources/INICIO/Banner\ inicio.jpeg");
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -105,7 +114,7 @@ body {
 }
 
 .hero h1 {
-  font-size: 3.5em;
+  font-size: 5em;
   margin-bottom: 10px;
   line-height: 1.2;
   font-weight: 700;
@@ -116,7 +125,7 @@ body {
 }
 
 .hero p {
-  font-size: 1.5em;
+  font-size: 3em;
   margin-bottom: 30px;
 }
 
@@ -132,7 +141,9 @@ body {
 }
 
 .btn-quote:hover {
-  background-color: #e07b00;
+  background-color: transparent;
+  color: #ff8c00;
+  border: 2px solid #ff8c00;
 }
 
 /* Ambos contenedores hijos de el siguiente tenian que estar posicionados con z-index y el 
@@ -158,15 +169,18 @@ padre con position absolute, hero position relative*/
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 3em;
+  padding: 1.5em;
   width: auto;
   height: auto;
 }
 
 .accreditations-box h2 {
-  font-size: 3rem;
+  font-size: 4em;
   font-weight: 700;
-  text-align: start;
+  text-align: center;
+}
+
+.accreditations-box h2 {
 }
 
 .catalog-box {
@@ -199,8 +213,13 @@ padre con position absolute, hero position relative*/
   border-radius: 10px;
   font-weight: 700;
   transition: all 0.3s ease;
-  width: auto;
+  width: 30%;
   height: 10%;
+}
+
+.catalog-box a {
+  justify-content: center;
+  font-size: 1.5em;
 }
 
 .btn-catalog:hover {
@@ -219,6 +238,7 @@ padre con position absolute, hero position relative*/
   display: flex;
   flex-direction: column;
   align-items: center;
+  line-height: 1.5em;
 }
 
 .history-text-container {
@@ -226,6 +246,7 @@ padre con position absolute, hero position relative*/
   box-shadow: 0 4px 8px 4px rgba(0, 0, 0, 0.3);
   padding: 1em;
   width: auto;
+  padding: 1.5em;
 }
 
 .history-section h2 {
@@ -380,7 +401,7 @@ padre con position absolute, hero position relative*/
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 8em 0;
+  padding: 4em 0;
   gap: 9em;
   color: black;
 }
@@ -395,13 +416,18 @@ padre con position absolute, hero position relative*/
   flex-direction: column;
   align-items: center;
   text-align: center;
-  width: 25%;
+  width: 450px;
   line-height: 1.5em;
 }
 
 .mision-box h2,
 .vision-box h2 {
   color: #ff8c00;
+}
+
+.mision-box p,
+.vision-box p {
+  font-size: 1.1em;
 }
 
 .mision-box img,
@@ -413,16 +439,332 @@ padre con position absolute, hero position relative*/
 }
 
 .btn-agendar-container {
-  background-color: #ff8c00;
   color: #fff;
   padding: 2em;
   text-decoration: none;
   border-radius: 10px;
-  width: 100px;
-  font-size: 1.2em;
+  font-size: 1em;
   transition: background-color 0.3s ease;
   font-weight: 700;
+  text-align: center;
+}
+
+.btn-agendar-container p {
+  text-decoration: none;
+}
+
+.btn-agendar-section {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 5em 0;
+  width: 100%;
+  background-color: rgb(244, 244, 244);
+  padding: 1em;
+}
+
+.btn-agendar-section a {
+  background-color: #ff8c00;
+  padding: 1em;
+  border-radius: 10px;
+  text-decoration: none;
+  color: white;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-agendar-section a:hover {
+  background-color: white;
+  color: #ff8c00;
+  border: 2px solid #ff8c00;
+}
+
+.lema-section {
+  background-color: url("/resources/fondoimagenlema.png");
+}
+
+.lema-container {
+  padding: 2em 0;
+  text-align: center;
+  color: black;
+  font-weight: bold;
+}
+
+.lema-container h2 {
+  color: #007bff;
+  font-size: 3em;
+  line-height: 1.5em;
+}
+
+.lema-container p {
+  color: black;
+}
+
+.lema-container i {
+  color: black;
+  font-size: 0.5em;
+}
+.comentarios-section {
+  background-image: url("/resources/textura.png");
+}
+
+.comentarios-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5em 2em;
+  gap: 2em;
+  text-align: center;
+  color: black;
+  line-height: 1.5em;
+  padding: 2em;
+  font-size: 1.4em;
+}
+
+.comentarios-tarjeta-container {
+  background-color: white;
+  box-shadow: 0 4px 8px 4px rgba(0, 0, 0, 0.2);
+  padding: 1em;
+  width: 50%;
+  text-align: center;
+}
+
+.comentarios-tarjeta-container h3 {
+  font-size: 1em;
+}
+
+.programa-calibracion-section {
+  display: flex;
+  justify-content: center;
+  color: #ff8c00;
+  align-self: center;
+}
+
+.programa-calibracion-container {
+  width: 50%;
+  text-align: center;
+  font-size: 1.4em;
+}
+
+.programa-calibracion-imgtext-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 20px;
+  width: 100%;
+  gap: 2em;
+}
+
+.programa-calibracion-imgtext-container img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.item-programa {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  flex: 1 1 250px;
+  max-width: 300px;
+}
+
+.item-programa img {
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.item-programa p {
+  font-size: 1em;
+  color: #333;
+  margin: 0;
+  font-weight: bold;
+}
+
+/* Sección de Cotización */
+.quote-section {
+  padding: 50px 5%;
+  background-color: var(--secondary-color);
+}
+
+.quote-container {
+  display: flex;
+  align-items: center;
+  background-color: var(--text-light);
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  max-width: 1000px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.quote-container .image-container {
+  flex: 1;
+  max-width: 50%;
+}
+
+.quote-container .image-container img {
+  padding: 1em;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.quote-container .text-container {
+  flex: 1;
+  padding: 40px;
+  text-align: left;
+}
+
+.quote-container h2 {
+  color: var(--primary-color);
+  font-size: 2rem;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.quote-container p {
+  color: var(--text-dark);
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+.btn-primary {
+  display: inline-block;
+  padding: 15px 30px;
+  margin-top: 40px;
+  background-color: var(--orange-btn);
+  color: var(--text-light);
+  text-decoration: none;
+  font-weight: 700;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #d16e20;
+}
+
+.footer {
+  background-color: #ff8c00;
+  color: var(--text-light);
+  padding: 40px 5%;
+  font-size: 0.9rem;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.contact-info p {
+  margin: 5px 0;
+  display: flex;
+  align-items: center;
+}
+
+.contact-info p span {
+  font-size: 1.5rem;
+  margin-right: 10px;
+  line-height: 1;
+}
+
+.footer-social-icons {
+  display: flex;
+  align-items: center;
+}
+
+.footer-social-icons a img {
+  width: 30px;
+  height: 30px;
+  margin-left: 15px;
+}
+
+.footer-social-icons p {
+  margin-left: 20px;
+}
+
+.copyright {
+  text-align: center;
+  padding-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    height: auto;
+    padding: 10px 5%;
+  }
+
+  .nav-menu {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .nav-menu li {
+    margin: 5px 10px;
+  }
+
+  .social-icons {
+    margin-top: 10px;
+  }
+
+  .services-grid,
+  .metrology-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .banner h1 {
+    font-size: 2rem;
+  }
+
+  .banner p {
+    font-size: 1rem;
+  }
+
+  .quote-container {
+    flex-direction: column;
+  }
+
+  .quote-container .image-container,
+  .quote-container .text-container {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .quote-container .image-container img {
+    height: 200px;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-social-icons {
+    margin-top: 20px;
+    flex-direction: column;
+  }
+
+  .footer-social-icons a {
+    margin: 10px 0;
+  }
+
+  .footer-social-icons p {
+    margin: 10px 0;
+  }
 }

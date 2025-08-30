@@ -10,7 +10,7 @@
 
 /*  styles and fonts */
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   margin: 0;
   padding: 0;
   color: var(--text-dark);
@@ -30,7 +30,7 @@ body {
 .header .logo {
   height: 60px;
   width: 60px;
-  background-image: url('http://googleusercontent.com/file_content/0');
+  background-image: url("/resources/Logo\ Metrología\ Fromi\ 2025\ ACTUALIZADO.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -51,17 +51,18 @@ body {
 .header nav ul.nav-menu li a {
   text-decoration: none;
   color: var(--text-light);
-  font-weight: 700;
+  font-weight: bold;
   padding: 25px 0;
   transition: color 0.3s ease;
 }
 
 .header nav ul.nav-menu li a:hover {
   color: var(--secondary-color);
+  border-bottom: 2px solid var(--secondary-color);
+  transition: 3s;
 }
 
 .header nav ul.nav-menu li a[href="Servicios_de_Calibración.html"] {
-  border-bottom: 2px solid var(--secondary-color);
   color: var(--secondary-color);
 }
 
@@ -84,11 +85,7 @@ body {
 }
 
 .banner {
-  background: linear-gradient(
-    to bottom right,
-    #2e62a8 0%,
-    #4a82bf 100%
-  );
+  background: linear-gradient(to bottom right, #2e62a8 0%, #4a82bf 100%);
   position: relative;
   width: 100%;
   padding: 100px 5%;
@@ -111,7 +108,7 @@ body {
 
 .banner::before {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath d='M0 0 L100 0 L100 100 Z' fill='%23ffffff'/%3E%3C/svg%3E"),
-                    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath d='M0 0 L100 0 L100 100 Z' fill='%23ffffff'/%3E%3C/svg%3E");
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath d='M0 0 L100 0 L100 100 Z' fill='%23ffffff'/%3E%3C/svg%3E");
   background-position: top right, bottom left;
   transform: rotate(180deg);
 }
@@ -269,44 +266,30 @@ body {
   margin: 0;
 }
 
-/* Sección de Reseñas */
-.review-section {
-  padding: 80px 5%;
+.comentarios-section {
+  background-image: url("/resources/textura.png");
+}
+
+.comentarios-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5em 2em;
+  gap: 2em;
   text-align: center;
-  background-color: var(--secondary-color);
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath d='M0 0 L100 0 L100 100 Z' fill='%23ffffff'/%3E%3C/svg%3E");
-  background-repeat: no-repeat;
-  background-size: 200% 200%;
-  background-position: top right, bottom left;
-  transform: rotate(180deg);
+  color: black;
+  line-height: 2em;
+  padding: 2em;
+  font-size: 1.4em;
 }
 
-.review-card {
-  background-color: var(--text-light);
-  border-radius: 8px;
-  padding: 40px 60px;
-  max-width: 700px;
-  margin: 0 auto;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-}
-
-.stars {
-  color: var(--orange-btn);
-  font-size: 2rem;
-  margin-bottom: 10px;
-}
-
-.review-text {
-  font-style: italic;
-  font-size: 1.1rem;
-  color: var(--text-dark);
-  margin-bottom: 20px;
-}
-
-.reviewer {
-  font-weight: 700;
-  color: var(--primary-color);
-  font-size: 1rem;
+.comentarios-tarjeta-container {
+  background-color: white;
+  box-shadow: 0 4px 8px 4px rgba(0, 0, 0, 0.2);
+  padding: 2em;
+  width: 60%;
+  text-align: center;
 }
 
 /* Sección de Cotización */
@@ -332,7 +315,7 @@ body {
 }
 
 .quote-container .image-container img {
-  display: block;
+  padding: 1em;
   width: 100%;
   height: auto;
   object-fit: cover;
