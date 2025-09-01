@@ -53,13 +53,12 @@ body {
   color: var(--text-light);
   font-weight: bold;
   padding: 25px 0;
-  transition: color 0.3s ease;
 }
 
 .header nav ul.nav-menu li a:hover {
   color: var(--secondary-color);
-  border-bottom: 2px solid var(--secondary-color);
-  transition: 3s;
+  border-top: 2px solid var(--secondary-color);
+  transition: color 0.3s ease;
 }
 
 .header nav ul.nav-menu li a[href="Servicios_de_Calibración.html"] {

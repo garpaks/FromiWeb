@@ -50,6 +50,7 @@ body {
   text-decoration: none;
   font-weight: 400;
   transition: color 0.3s ease;
+  padding: 1em 0;
 }
 
 .nav-menu li a:hover {
@@ -114,7 +115,7 @@ body {
 }
 
 .hero h1 {
-  font-size: 5em;
+  font-size: clamp(1em, 5vw, 5em);
   margin-bottom: 10px;
   line-height: 1.2;
   font-weight: 700;
@@ -178,9 +179,6 @@ padre con position absolute, hero position relative*/
   font-size: 4em;
   font-weight: 700;
   text-align: center;
-}
-
-.accreditations-box h2 {
 }
 
 .catalog-box {
@@ -353,6 +351,7 @@ padre con position absolute, hero position relative*/
 .servicios-container-text {
   color: #007bff;
   font-size: 1.4em;
+  text-align: center;
 }
 
 .servicio-item {
@@ -479,11 +478,12 @@ padre con position absolute, hero position relative*/
 }
 
 .lema-section {
-  background-color: url("/resources/fondoimagenlema.png");
+  background: linear-gradient(rgb(226, 225, 225, 0.92)),
+    url(/resources/fondoimagenlema.png);
 }
 
 .lema-container {
-  padding: 2em 0;
+  padding: 3em;
   text-align: center;
   color: black;
   font-weight: bold;
@@ -496,13 +496,10 @@ padre con position absolute, hero position relative*/
 }
 
 .lema-container p {
+  font-size: 1.5em;
   color: black;
 }
 
-.lema-container i {
-  color: black;
-  font-size: 0.5em;
-}
 .comentarios-section {
   background-image: url("/resources/textura.png");
 }
@@ -544,6 +541,7 @@ padre con position absolute, hero position relative*/
   width: 50%;
   text-align: center;
   font-size: 1.4em;
+  line-height: 1.5em;
 }
 
 .programa-calibracion-imgtext-container {
