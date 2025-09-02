@@ -1,0 +1,25 @@
+git --version: Muestra la versión de Git instalada en tu sistema, lo que te permite verificar si está configurado correctamente.
+ 
+git init: Inicializa un nuevo repositorio de Git en la carpeta donde te encuentres, convirtiéndola en un proyecto que Git puede rastrear.
+ 
+git config --global user.email "": Configura tu correo electrónico para todos los proyectos de Git en tu computadora. Este correo se asocia a los commits que realices.
+ 
+git remote add origin <URL_del_repositorio_remoto>: Conecta tu repositorio local con un repositorio remoto (en GitHub, GitLab, etc.). origin es el nombre estándar que se le da al repositorio remoto.
+ 
+git add . : Añade todos los archivos modificados o nuevos en tu directorio de trabajo al área de staging, preparándolos para el próximo commit.
+ 
+git commit -m "": Guarda los cambios del área de staging en un nuevo commit en tu repositorio local. El -m te permite agregar un mensaje descriptivo.
+ 
+git push -u origin dev: Sube los commits de tu rama local (dev) al repositorio remoto (origin). La opción -u establece un seguimiento (upstream) para que futuras subidas y descargas sean más sencillas.
+ 
+ 
+git status : te muestra el estado actual de tu repositorio. Te dice qué archivos has modificado, cuáles están sin seguimiento y cuáles están listos para guardar en un commit. Es tu herramienta para saber qué está pasando en tu proyecto.
+ 
+git log: git log te muestra el historial de commits de tu proyecto. Te permite ver quién hizo qué, cuándo y por qué, a través de los mensajes y metadatos de cada commit. Es tu forma de ver el pasado de tu código.git fetch: Descarga los cambios y el historial del repositorio remoto a tu máquina, pero no los aplica a tus archivos de trabajo.
+ 
+git fetch: Descarga los cambios y el historial del repositorio remoto a tu máquina, pero no los aplica a tus archivos de trabajo.
+ 
+git merge: Fusiona esos cambios descargados en tu rama local actual.
+ 
+ 
+git pull: hace git fetch y git merge
