@@ -23,3 +23,9 @@ git merge: Fusiona esos cambios descargados en tu rama local actual.
  
  
 git pull: hace git fetch y git merge
+
+1. git pull origin dev Update 
+2. git add . Save
+3. git commit -m "Se agregan comandos de Git" Comentarios
+4. git push origin dev Subir 
+
