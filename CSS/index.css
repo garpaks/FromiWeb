@@ -126,7 +126,7 @@ body {
 }
 
 .hero p {
-  font-size: 3em;
+  font-size: clamp(1em, 5vw, 3em);
   margin-bottom: 30px;
 }
 
@@ -136,9 +136,9 @@ body {
   padding: 15px 40px;
   text-decoration: none;
   border-radius: 10px;
-  font-size: 1.2em;
+  font-size: clamp (0.5em, 5vw, 1.2em);
   transition: background-color 0.3s ease;
-  font-weight: 700;
+  font-weight: bold;
 }
 
 .btn-quote:hover {
@@ -147,15 +147,13 @@ body {
   border: 2px solid #ff8c00;
 }
 
-/* Ambos contenedores hijos de el siguiente tenian que estar posicionados con z-index y el 
-padre con position absolute, hero position relative*/
 .accreditations-container {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr 1fr;
   width: 80%;
   height: auto;
   position: absolute;
-  top: 80%;
+  top: 85%;
   left: 50%;
   transform: translateX(-50%);
   margin: auto;
@@ -176,7 +174,7 @@ padre con position absolute, hero position relative*/
 }
 
 .accreditations-box h2 {
-  font-size: 4em;
+  font-size: clamp(1em, 5vw, 4em);
   font-weight: 700;
   text-align: center;
 }
@@ -190,11 +188,12 @@ padre con position absolute, hero position relative*/
   align-items: center;
   height: auto;
   width: 100%;
+  padding: 1em;
 }
 
 .catalog-box p {
   color: #333;
-  font-size: 1.5em;
+  font-size: clamp(0.1em, 5vw, 1.5em);
   line-height: 1.5;
   font-weight: bold;
 }
@@ -217,7 +216,8 @@ padre con position absolute, hero position relative*/
 
 .catalog-box a {
   justify-content: center;
-  font-size: 1.5em;
+  font-size: clamp(0.3em, 5vw, 1.5em);
+  padding: 1em;
 }
 
 .btn-catalog:hover {
@@ -226,7 +226,7 @@ padre con position absolute, hero position relative*/
 }
 
 .history-section {
-  padding: 200px 20px 0 20px;
+  padding: 250px 20px 0 20px;
   background-color: rgb(244, 244, 244);
   text-align: center;
 }
@@ -248,13 +248,13 @@ padre con position absolute, hero position relative*/
 }
 
 .history-section h2 {
-  font-size: 2.5em;
+  font-size: clamp(1.5em, 5vw, 2.5em);
   font-weight: 700;
   color: rgb(0, 126, 195);
 }
 
 .history-intro {
-  font-size: 1.2em;
+  font-size: clamp(0.2em, 5vw, 1.2em);
   color: #555;
   max-width: 800px;
   margin: 0 auto 10px;
@@ -264,6 +264,7 @@ padre con position absolute, hero position relative*/
 .history-sub-intro {
   font-style: normal;
   color: black;
+  font-size: clamp(0.2em, 5vw, 1.2em);
 }
 
 /* Estilos de la línea de tiempo */
@@ -764,5 +765,12 @@ padre con position absolute, hero position relative*/
 
   .footer-social-icons p {
     margin: 10px 0;
+  }
+}
+
+@media (max-width: 534px) {
+  .accreditations-container {
+    display: grid;
+    grid-template-columns: 1fr;
   }
 }

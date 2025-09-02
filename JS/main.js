@@ -18,7 +18,7 @@ const lemaAutor = document.querySelector(".lema-container p ");
 // Variable llevar el control del indice actual
 let indiceActual = 0;
 
-// Funcion para cambiar conteido
+// Funcion para cambiar contenido
 function cambiarLema() {
   const citaActual = lemas[indiceActual];
 
