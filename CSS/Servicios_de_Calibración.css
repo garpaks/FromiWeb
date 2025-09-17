@@ -262,8 +262,79 @@ body {
   margin: 0;
 }
 
+/* Sección de frames por cada servicio */
+
+.panel-uno-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5em;
+  gap: 7em;
+}
+
+.panel-uno-container img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.panel-uno-container a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: 2px solid var(--orange-btn);
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  background-color: var(--orange-btn)
+}
+
+.panel-uno-container a:hover {
+  background-color: transparent;
+  color: var(--orange-btn);
+
+}
+
+.documento-container {
+  width: 40%;
+  padding: 20px;}
+
+
+.panel-dos-container{
+  display: flex;
+  justify-content: center;
+  gap: 10em;
+  align-items: center;
+  padding: 5em;
+  background-color: white;
+}
+
+.panel-dos-container h1 {
+  color: var(--primary-color);}
 .comentarios-section {
   background-image: url("/resources/textura.png");
+}
+
+.panel-dos-container a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: 2px solid var(--orange-btn);
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  background-color: var(--orange-btn)
+
+}
+
+.panel-dos-container a:hover {
+  background-color: transparent;
+  color: var(--orange-btn);
+
+}
+
+.acreditacion-container {
+  
 }
 
 .comentarios-container {

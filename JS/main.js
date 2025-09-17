@@ -10,26 +10,28 @@ const lemas = [
     autor: "- Henry Ford -",
   },
   {
-    texto: '"El éxito no es la clave de la felicidad. La felicidad es la clave del éxito. Si amas lo que haces, tendrás éxito."',
-    autor: '- Albert Schweitzer -',
+    texto:
+      '"El éxito no es la clave de la felicidad. La felicidad es la clave del éxito. Si amas lo que haces, tendrás éxito."',
+    autor: "- Albert Schweitzer -",
   },
   {
     texto: '"La única forma de hacer un gran trabajo es amar lo que haces."',
-    autor: '- Steve Jobs -',
+    autor: "- Steve Jobs -",
   },
   {
-    texto: '"El liderazgo es la capacidad de transformar la visión en realidad."',
-    autor: '- Warren Bennis -',
+    texto:
+      '"El liderazgo es la capacidad de transformar la visión en realidad."',
+    autor: "- Warren Bennis -",
   },
   {
     texto: '"La innovación es lo que distingue a un líder de los demás."',
-    autor: '- Steve Jobs -',
+    autor: "- Steve Jobs -",
   },
   {
-    texto: '"Nuestra mayor debilidad radica en darnos por vencidos. La forma más segura de tener éxito es siempre intentarlo una vez más."',
-    autor: '- Thomas A. Edison -',
+    texto:
+      '"Nuestra mayor debilidad radica en darnos por vencidos. La forma más segura de tener éxito es siempre intentarlo una vez más."',
+    autor: "- Thomas A. Edison -",
   },
-
 ];
 
 // Variables para el lema
@@ -53,6 +55,6 @@ function cambiarLema() {
   }
 }
 
-setInterval(cambiarLema, 20000);
+setInterval(cambiarLema, 10000);
 
 cambiarLema();
