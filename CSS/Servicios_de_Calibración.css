@@ -8,6 +8,15 @@
   --orange-btn: #f58428;
 }
 
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+
 /*  styles and fonts */
 body {
   font-family: "Montserrat", sans-serif;
@@ -266,10 +275,9 @@ body {
 
 .panel-uno-container{
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   padding: 5em;
-  gap: 7em;
 }
 
 .panel-uno-container img {
@@ -302,8 +310,7 @@ body {
 
 .panel-dos-container{
   display: flex;
-  justify-content: center;
-  gap: 10em;
+  justify-content: space-evenly;
   align-items: center;
   padding: 5em;
   background-color: white;
@@ -333,8 +340,69 @@ body {
 
 }
 
-.acreditacion-container {
-  
+/* Sección del carrusel */
+
+.carrusel-container-general {
+  background-color: var(--secondary-color);
+  padding: 3em;
+  text-align: center;
+}
+
+/* El contenedor que sostiene todas las diapositivas en una fila */
+.carrusel-padre-container {
+  display: flex;
+  transition: transform 0.5s ease-in-out; 
+  overflow: hidden;
+
+}
+
+/* La tarjeta que va a contener los elementos */
+.carrusel-hijo-container {
+  min-width: 100%; 
+  flex-shrink: 0; 
+  display: grid; 
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+
+.service-card-clon {
+  background-color: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 8px;
+  padding: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.puntos {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.puntos ul {
+  list-style: none; 
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.punto {
+  width: 10px;
+  height: 10px;
+  background-color: #ccc; 
+  border-radius: 50%; 
+  margin: 0 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; 
+}
+
+/* Estilo para el punto activo */
+.punto.activo {
+  background-color: var(--primary-color); /* Color que tenías para el punto activo */
 }
 
 .comentarios-container {
