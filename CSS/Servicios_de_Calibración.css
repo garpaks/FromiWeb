@@ -340,6 +340,96 @@ body {
 
 }
 
+/* Seccion de pruebas */
+
+.prueba-ensayo-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ebf5fa;
+}
+
+.prueba-ensayo-section h1 {
+  color: var(--primary-color);
+  font-size: 3em;
+}
+
+.prueba-ensayo-section p {
+  font-size: 1.2em;
+  text-align: center;
+}
+
+.tipos-pruebas-container {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  padding: 1em;
+}
+
+.tipo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+  height: auto;
+  text-align: center;
+  padding: 1em;
+}
+
+#subtitulo {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: var(--text-dark);
+}
+
+.tipo-container h3 {
+  color: var(--primary-color);
+  margin-bottom: 10px;
+  font-size: 2em;}
+
+.imagen-tipo-container {
+  width: 100%;
+  overflow: hidden;
+  aspect-ratio: 16/9;
+  height: auto;
+}
+.tipo-container img {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+  border-radius: 40px;
+}
+
+.btn-agendar {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 10px 20px;
+  margin: 3em;
+  border: 2px solid var(--orange-btn);
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  background-color: var(--orange-btn)
+}
+
+.btn-agendar:hover {
+  background-color: transparent;
+  color: var(--orange-btn);
+}
+
+.btn-agendar a {
+  color: white;
+  text-decoration: none;
+}
+
+.btn-agendar a:hover {
+  color: var(--orange-btn);
+}
+
+
+
 /* Sección del carrusel */
 
 .carrusel-container-general {

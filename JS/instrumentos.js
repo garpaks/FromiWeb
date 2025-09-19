@@ -102,6 +102,7 @@ document.addEventListener("DOMContentLoaded", function () {
       titulo: "Mantenimiento Preventivo y CORRECTIVO",
       subtitulo:
         "Evita paros, reduce costos y mantén tus herramientas en óptimas condiciones.",
+      documentoImagen: "/resources/manteimineto-documento.png",
     },
   }; // Función para mostrar la vista principal de servicios
 
