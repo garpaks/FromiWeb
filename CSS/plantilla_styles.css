@@ -101,7 +101,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: linear-gradient(to right, #2187f4, #562196);
+  background-image: linear-gradient(to right, #2187f4, #0760ae);
   background-image:url("/resources/textura.png");
   background-size: cover;
   background-repeat: no-repeat;
