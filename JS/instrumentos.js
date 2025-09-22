@@ -99,10 +99,9 @@ document.addEventListener("DOMContentLoaded", function () {
       documentoImagen: "/resources/prueba-ensayo-documento.png",
     },
     "mantenimiento-section": {
-      titulo: "Mantenimiento Preventivo y CORRECTIVO",
+      titulo: "MANTENIMIENTO PREVENTIVO Y CORRECTIVO",
       subtitulo:
         "Evita paros, reduce costos y mantén tus herramientas en óptimas condiciones.",
-      documentoImagen: "/resources/manteimineto-documento.png",
     },
   }; // Función para mostrar la vista principal de servicios
 

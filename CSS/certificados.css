@@ -1,0 +1,47 @@
+.certificados-section {
+  background-color: var(--light-gray);
+  padding: 50px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 54vh;
+}
+
+.certificados-section h1 {
+  color: var(--primary-color);
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.certificados-section p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.btn-descargar {
+  font-weight: bold;
+  padding: 10px 20px;
+  margin: 1em;
+  border: 2px solid var(--orange-btn);
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  background-color: var(--orange-btn);
+  cursor: pointer;
+}
+.btn-descargar a {
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.btn-descargar:hover {
+  background-color: transparent;
+}
+.btn-descargar:hover a {
+  color: var(--orange-btn);
+  text-decoration: none;
+}
