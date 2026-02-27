@@ -39,7 +39,7 @@ body {
 .header .logo {
   height: 60px;
   width: 60px;
-  background-image: url("/resources/Logo\ Metrología\ Fromi\ 2025\ ACTUALIZADO.png");
+  background-image: url("../resources/Logo\ Metrología\ Fromi\ 2025\ ACTUALIZADO.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -115,7 +115,7 @@ body {
   width: 100%;
   height: 100%;
   background: linear-gradient(rgba(8, 77, 167, 0.8), rgba(46, 98, 168, 0.8)),
-   url("/resources/textura.png");
+   url("../resources/textura.png");
   background-size: cover;
   background-repeat: no-repeat;
   z-index: 1; 
@@ -323,7 +323,7 @@ body {
 .panel-dos-container h1 {
   color: var(--primary-color);}
 .comentarios-section {
-  background-image: url("/resources/textura.png");
+  background-image: url("../resources/textura.png");
 }
 
 .panel-dos-container a {

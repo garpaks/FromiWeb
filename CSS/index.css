@@ -34,7 +34,7 @@ body {
 }
 
 .logo {
-  background-image: url("/resources/Logo\ Metrología\ Fromi\ 2025\ ACTUALIZADO.png");
+  background-image: url("../resources/Logo\ Metrología\ Fromi\ 2025\ ACTUALIZADO.png");
   background-size: contain;
   background-repeat: no-repeat;
   width: 150px;
@@ -91,7 +91,7 @@ body {
 }
 
 .hero {
-  background-image: url("/resources/INICIO/Banner\ inicio.jpeg");
+  background-image: url("../resources/INICIO/Banner\ inicio.jpeg");
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -488,7 +488,7 @@ body {
 
 .lema-section {
   background: linear-gradient(rgb(226, 225, 225, 0.92)),
-    url(/resources/fondoimagenlema.png);
+    url("../resources/fondoimagenlema.png");
 }
 
 .lema-container {
@@ -510,7 +510,7 @@ body {
 }
 
 .comentarios-section {
-  background-image: url("/resources/textura.png");
+  background-image: url("../resources/textura.png");
 }
 
 .comentarios-container {
