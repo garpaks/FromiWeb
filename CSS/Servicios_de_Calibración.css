@@ -96,10 +96,14 @@ body {
   /* Fondo base si las texturas o filtros no cargan */
   background-color: #2e62a8;
   position: relative;
-  width: 100%;
+  width: auto;
   padding: 100px 5%;
   text-align: center;
   overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
 }
 
 /* Pseudoelemento para la textura y el filtro */
