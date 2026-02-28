@@ -34,7 +34,7 @@ body {
 }
 
 .logo {
-  background-image: url("../resources/Logo\ Metrología\ Fromi\ 2025\ ACTUALIZADO.png");
+  background-image: url("../resources/Logo%20Metrolog%C3%ADa%20Fromi%202025%20ACTUALIZADO.png");
   background-size: contain;
   background-repeat: no-repeat;
   width: 150px;
@@ -91,7 +91,7 @@ body {
 }
 
 .hero {
-  background-image: url("../resources/INICIO/Banner\ inicio.jpeg");
+  background-image: url("../resources/INICIO/Banner%20inicio.jpeg");
   background-size: cover;
   background-position: center;
   height: 100vh;
